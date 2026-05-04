@@ -1,24 +1,32 @@
 body {
-    background-color: #131313;
-     font-family: 'inter'; 
+  background-color: #131313;
+  font-family: "inter";
 }
 
-body, h1, h2, h3, h4, h5, p, ul, li, a{
-    margin: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+a {
+  margin: 0;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-    display: grid;
+img {
+  max-width: 100%;
+  height: auto;
+  display: grid;
 }
-

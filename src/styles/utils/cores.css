@@ -2,5 +2,6 @@
   /* cores base */
   --cor-primaria: #FCD500; /* destaque */
   --cor-texto-primaria: #ffffff;   /* texto principal */
+  --cor-texto-segundaria: #333333;
   --color-bg: #0C0C0C;     /* fundo principal */
 }

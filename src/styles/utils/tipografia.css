@@ -1,6 +1,8 @@
 :root {
-    --fonte-1-xs: 0.4rem;
-    --fonte-2-xs: 1rem;
-    --fonte-1-md: 1.125rem;
-    --fonte-2-md: 1.5rem;
+  --fonte-1-xs: 0.4rem;
+  --fonte-2-xs: 1rem;
+  --fonte-1-md: 1.125rem;
+  --fonte-2-md: 1.5rem;
+  --fonte-1-2xl: 2rem;
+  --fonte-1-3xl: 4.125rem;
 }

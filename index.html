@@ -14,17 +14,18 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <link rel="preload" href="./src/style.css" as="style" />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <header class="header-bg">
       <div class="header-container">
         <div class="header-logo">
-          <a href="/">
-            <h1>Thiago Lopes Machado</h1>
-            <p>Desenvolvedor Full Stack</p>
-          </a>
+          <h1><a href="/">Thiago Lopes Machado</a></h1>
+          <p>Desenvolvedor Full Stack</p>
         </div>
         <nav class="header-nav" aria-label="Redes sociais e email">
           <ul>
@@ -36,7 +37,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/icons/Github-icon-white.svg"
+                  src="icons/Github-icon-white.svg"
                   alt="GitHub"
                   width="24"
                   height="24"
@@ -51,7 +52,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/icons/Linkedin-icon-white.svg"
+                  src="icons/Linkedin-icon-white.svg"
                   alt="Linkedin"
                   width="24"
                   height="24"
@@ -66,7 +67,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/icons/Mail-icon-white.svg"
+                  src="icons/Mail-icon-white.svg"
                   alt="email"
                   width="24"
                   height="24"
@@ -77,12 +78,48 @@
         </nav>
       </div>
     </header>
-    <!--  
-    <div class="i"><img src="src/assets/images/imgHome.png" alt="" /></div>
     <main class="conteudo-bg">
-      <h2>kkkksksksksk</h2>
+      <picture class="hero-img">
+        <source
+          srcset="images/imgHome.webp"
+          media="(min-width: 800px)"
+          type="image/webp"
+        />
+        <img
+          src="images/imgHomeM.webp"
+          alt="Imagem ilustrativa"
+          fetchpriority="high"
+          width="800"
+          height="389"
+        />
+      </picture>
+      <section class="conteudo-container" aria-labelledby="titulo-principal">
+        <div class="conteudo">
+          <h1 id="titulo-principal">Desenvolvedor Full Stack</h1>
+          <p>Desenvolvendo aplicações modernas com Java e JavaScript</p>
+        </div>
+        <div class="hero-acoes">
+          <div class="conteudo-info">
+            <p>Brasil(GTM-3)</p>
+            <h3>Remoto · Híbrido</h3>
+            <span>Aberto a oportunidades</span>
+          </div>
+          <div class="conteudo-botoes">
+            <a class="botao-sobre" href="#sobre">SOBRE</a>
+            <a href="#" class="botao-curriculo">
+              <img
+                src="icons/curriculoIcon.svg"
+                alt=""
+                aria-hidden="true"
+                width="32"
+                height="32"
+              />
+              Ver curriculo
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-    -->
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

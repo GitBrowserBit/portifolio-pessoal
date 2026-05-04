@@ -4,4 +4,6 @@
 @import url('./styles/utils/tipografia.css');
 /** Header */
 @import url('./styles/header.css');
+/*conteudo*/
+@import url('./styles/conteudo.css');
 
