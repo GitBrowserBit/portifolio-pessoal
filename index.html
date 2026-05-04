@@ -17,15 +17,16 @@
       media="print"
       onload="this.media = 'all'"
     />
-    <link rel="preload" href="./src/style.css" as="style" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <!-- <link rel="preload" href="./src/style.css" as="style" /> -->
   </head>
   <body>
-    <header class="header-bg">
+    <header class="header-bg" data-scroll="desativado">
       <div class="header-container">
         <div class="header-logo">
-          <h1><a href="/">Thiago Lopes Machado</a></h1>
-          <p>Desenvolvedor Full Stack</p>
+          <a href="/">
+            Thiago Lopes Machado <br />
+            <span>Desenvolvedor Full Stack</span>
+          </a>
         </div>
         <nav class="header-nav" aria-label="Redes sociais e email">
           <ul>

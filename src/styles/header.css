@@ -16,13 +16,12 @@
   font-size: var(--fonte-2-xs);
   font-weight: 900;
 }
-.header-logo p {
+.header-logo span {
   font-size: var(--fonte-1-xs);
   font-weight: 400;
 }
 
-.header-logo h1 a:hover,
-.header-logo p:hover {
+.header-logo a:hover {
   color: var(--cor-primaria);
   transition: 0.5s;
 }
@@ -35,25 +34,20 @@
 @media (min-width: 800px) {
   .header-bg {
     will-change: transform;
-    transition:
-      transform 0.3s ease,
-      opacity 0.3s ease;
     z-index: 99;
   }
-  .header-bg.fixed {
+  .header-bg[data-scroll="ativo"] {
     position: fixed;
-    transform: translateY(-100%);
-    opacity: 0;
+    top: 0;
   }
-  .header-bg.fixed.show {
-    transform: translateY(0);
-    opacity: 1;
+  .header-bg[data-scroll="desativado"] {
+    position: absolute;
   }
 
   .header-logo a {
     font-size: var(--fonte-2-md);
   }
-  .header-logo p {
+  .header-logo span {
     font-size: var(--fonte-1-md);
   }
   .header-container {

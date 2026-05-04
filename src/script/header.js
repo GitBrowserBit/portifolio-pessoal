@@ -1,32 +1,20 @@
-export class Header {
-  headerScrollShow = () => {
-    let lastScroll = 0;
+export default function headerScroll() {
+  const header = document.querySelector("header");
 
-    const header = document.querySelector(".header-bg");
-    if (!header) return;
+  let scrollAnterior = 0;
 
-    function handleScroll() {
-      const currentScroll = window.scrollY;
+  window.addEventListener("scroll", () => {
+    const scroll = window.scrollY;
+    const scrollParaCima = scroll < scrollAnterior;
 
-      // ativa modo fixed após qualquer scroll
-      if (currentScroll > 0) {
-        header.classList.add("fixed");
+    let novoEstado = header.dataset.scroll;
 
-        if (currentScroll < lastScroll) {
-          // subindo → aparece
-          header.classList.add("show");
-        } else {
-          // descendo → some
-          header.classList.remove("show");
-        }
-      } else {
-        // topo da página
-        header.classList.remove("fixed", "show");
-      }
+    if (scroll >= 700 && scrollParaCima) novoEstado = "ativo";
+    else novoEstado = "desativado";
 
-      lastScroll = currentScroll;
-    }
+    if (header.dataset.scroll !== novoEstado)
+      header.dataset.scroll = novoEstado;
 
-    window.addEventListener("scroll", handleScroll);
-  };
+    scrollAnterior = scroll;
+  });
 }
