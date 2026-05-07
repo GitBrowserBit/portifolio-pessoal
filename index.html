@@ -1,10 +1,181 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thiago Lopes Machado | Full Stack</title>
+    <meta
+      name="description"
+      content="Portfólio de Thiago Lopes Machado, desenvolvedor full stack com experiência em JavaScript desenvolvimento web moderno."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!-- <link rel="preload" href="./src/style.css" as="style" /> -->
   </head>
-  <body></body>
+  <body>
+    <header class="header-bg" data-scroll="desativado">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="/">
+            Thiago Lopes Machado <br />
+            <span>Desenvolvedor Full Stack</span>
+          </a>
+        </div>
+        <nav class="header-nav" aria-label="Redes sociais e email">
+          <ul>
+            <li>
+              <a
+                aria-label="Acessar GitHub (abre em nova aba)"
+                href="https://github.com/GitBrowserBit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="icons/Github-icon-white.svg"
+                  alt="GitHub"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Acessar Linkedin (abre em nova aba)"
+                href="https://www.linkedin.com/in/thiago-lopes-machado-994b4a2b9/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="icons/Linkedin-icon-white.svg"
+                  alt="Linkedin"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Enviar email (abre em nova aba)"
+                href="mailto:l6pes.dev@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="icons/Mail-icon-white.svg"
+                  alt="email"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="conteudo-bg">
+      <picture class="hero-img">
+        <source
+          srcset="images/imgHome.webp"
+          media="(min-width: 800px)"
+          type="image/webp"
+        />
+        <img
+          src="images/imgHomeM.webp"
+          alt="Imagem ilustrativa"
+          fetchpriority="high"
+          width="800"
+          height="389"
+        />
+      </picture>
+      <section class="conteudo-container" aria-labelledby="titulo-principal">
+        <div class="conteudo">
+          <h1 id="titulo-principal">Desenvolvedor Full Stack</h1>
+          <p>Desenvolvendo aplicações modernas com Java e JavaScript</p>
+        </div>
+        <div class="hero-acoes">
+          <div class="conteudo-info">
+            <p>Brasil(GTM-3)</p>
+            <h3>Remoto · Híbrido</h3>
+            <span>Aberto a oportunidades</span>
+          </div>
+          <div class="conteudo-botoes">
+            <a class="botao-sobre" href="#sobre">SOBRE</a>
+            <a href="#" class="botao-curriculo">
+              <img
+                src="icons/curriculoIcon.svg"
+                alt=""
+                aria-hidden="true"
+                width="32"
+                height="32"
+              />
+              Ver curriculo
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="tecnologia-bg">
+        <div class="tecnologia">
+          <h2 class="tecnologia-titulo">TECNOLOGIAS</h2>
+          <picture class="tecnologia-img">
+            <source
+              media="(min-width: 800px)"
+              srcset="images/imgTecnologia.svg"
+              width="1201"
+              height="43"
+            />
+            <img
+              src="images/imgTecnologiaM.svg"
+              alt="imagem ilustrativa de tecnologias"
+              width="382"
+              height="76"
+            />
+          </picture>
+          <ul class="tecnologia-lista">
+            <li class="tecnologia-item">
+              <div>
+                <img
+                  src="icons/icon-javscript.svg"
+                  alt=""
+                  width="64"
+                  height="64"
+                />
+              </div>
+              <div>
+                <span>JavaScript</span>
+              </div>
+            </li>
+            <li class="tecnologia-item">
+              <img src="icons/icon-react.svg" alt="" width="64" height="64" />
+              <span>ReactJS</span>
+            </li>
+            <li class="tecnologia-item">
+              <img src="icons/icon-java.svg" alt="" width="64" height="64" />
+              <span>Java</span>
+            </li>
+            <li class="tecnologia-item">
+              <img
+                src="icons/icon-springBoot.svg"
+                alt=""
+                width="64"
+                height="64"
+              />
+              <span>Spring-boot</span>
+            </li>
+            <li class="tecnologia-item">
+              <img src="icons/icon-git.svg" alt="" width="64" height="64" />
+              <span>Git</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>

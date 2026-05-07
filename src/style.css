@@ -1,0 +1,9 @@
+/** utilitarios */
+@import url("./styles/global.css");
+@import url("./styles/utils/cores.css");
+@import url("./styles/utils/tipografia.css");
+/** Header */
+@import url("./styles/header.css");
+/*conteudo*/
+@import url("./styles/conteudo.css");
+@import url("./styles/tecnologias.css");
