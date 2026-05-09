@@ -37,9 +37,11 @@
     z-index: 99;
   }
   .header-bg[data-scroll="ativo"] {
+    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
   }
+
   .header-bg[data-scroll="desativado"] {
     position: absolute;
   }
