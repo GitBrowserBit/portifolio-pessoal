@@ -1,0 +1,33 @@
+.botao-curriculo {
+  color: #fcd500;
+  font-size: var(--fonte-2-xs);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.botao-curriculo:hover {
+  color: #d8b600;
+}
+
+.underline-animado {
+  position: relative;
+}
+.underline-animado:hover,
+.underline-animado:focus {
+  transform: scale(1.1);
+}
+.underline-animado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor-primaria);
+  transition: width 0.3s ease;
+}
+
+.underline-animado:hover::after {
+  width: 100%;
+}

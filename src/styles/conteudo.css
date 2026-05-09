@@ -81,18 +81,6 @@
   color: #fcd500;
 }
 
-.botao-curriculo {
-  color: #fcd500;
-  font-size: var(--fonte-2-xs);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.botao-curriculo:hover {
-  color: #d8b600;
-}
-
 @media (min-width: 500px) {
   .conteudo h1 {
     max-width: 500px;
