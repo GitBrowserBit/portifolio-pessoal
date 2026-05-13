@@ -30,7 +30,7 @@
         </div>
         <nav class="header-nav" aria-label="Redes sociais e email">
           <ul>
-            <li>
+            <li class="underline-animado">
               <a
                 aria-label="Acessar GitHub (abre em nova aba)"
                 href="https://github.com/GitBrowserBit"
@@ -45,7 +45,7 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="underline-animado">
               <a
                 aria-label="Acessar Linkedin (abre em nova aba)"
                 href="https://www.linkedin.com/in/thiago-lopes-machado-994b4a2b9/"
@@ -60,7 +60,7 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="underline-animado">
               <a
                 aria-label="Enviar email (abre em nova aba)"
                 href="mailto:l6pes.dev@gmail.com"
@@ -120,7 +120,7 @@
           </div>
         </div>
       </section>
-      <section class="tecnologia-bg">
+      <section class="tecnologia-bg container">
         <div class="tecnologia">
           <h2 class="tecnologia-titulo">TECNOLOGIAS</h2>
           <picture class="tecnologia-img">
@@ -137,7 +137,7 @@
               height="76"
             />
           </picture>
-          <ul class="tecnologia-lista">
+          <ul class="tecnologia-lista" aria-label="Tecnologias utilizadas">
             <li class="tecnologia-item">
               <div>
                 <img
@@ -175,7 +175,281 @@
           </ul>
         </div>
       </section>
+      <section id="sobre" class="sobre-bg container">
+        <div class="sobre">
+          <h2 class="sobre-titulo">Sobre mim</h2>
+          <div class="sobre-layout">
+            <picture class="sobre-img">
+              <img
+                src="images/imgSobre.webp"
+                alt="Foto de Thiago Lopes Machado"
+                width="530"
+                height="530"
+              />
+            </picture>
+            <div class="sobre-conteudo">
+              <h3 class="sobre-subtitulo">Curioso sobre me? Aqui está</h3>
+              <div sobre-paragrafo>
+                <p class="sobre-texto">
+                  Sou desenvolvedor web com foco em aplicações fullstack,
+                  atuando na criação de soluções completas que integram
+                  interface, lógica e dados.
+                </p>
+                <p class="sobre-texto">
+                  Atuo na construção de interfaces modernas e no desenvolvimento
+                  de APIs, priorizando organização, desempenho e boas práticas
+                  de desenvolvimento.
+                </p>
+                <p class="sobre-texto">
+                  Tenho experiência com tecnologias do ecossistema web, como
+                  React e Java com Spring Boot, além de já ter tido contato com
+                  ferramentas como Next.js, Node.js, Express e bancos de dados
+                  relacionais.
+                </p>
+                <p class="sobre-texto">
+                  Sou adaptável a diferentes demandas e estou em constante
+                  evolução, buscando desenvolver soluções completas que integrem
+                  front-end, back-end e dados de forma eficiente.
+                </p>
+              </div>
+              <div class="sobre-botoes">
+                <a href="#" class="botao-curriculo">
+                  <img
+                    src="icons/curriculoIcon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  />
+                  Ver curriculo
+                </a>
+                <div class="sobre-redes">
+                  <a
+                    href="https://github.com/GitBrowserBit"
+                    class="underline-animado"
+                    aria-label="Perfil no GitHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="icons/icon-git-yellow.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/thiago-lopes-machado-994b4a2b9/"
+                    class="underline-animado"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="icons/icon-linkedin-yellow.svg"
+                      alt="Linkedin"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portifolio-bg" aria-labelledby="portifolio-titulo">
+        <div class="portifolio">
+          <h2 class="portifolio-titulo" id="portifolio-titulo">Projetos</h2>
+          <div class="portifolio-container">
+            <article class="portifolio-card">
+              <a
+                href="https://github.com/GitBrowserBit/api_rest_baozi_store.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir projeto Api Rest Baozi Store no GitHub"
+              >
+                <picture class="portifolio-img">
+                  <img
+                    src="images/prevewProjetoBaozi.png"
+                    alt=""
+                    width="284"
+                    height="415"
+                    alt="Preview do projeto Api Rest Baozi Store"
+                  />
+                </picture>
+                <div class="portifolio-card-titulo">
+                  <span>Api Rest Baozi Store</span>
+                </div>
+              </a>
+            </article>
+            <article class="portifolio-card">
+              <picture class="portifolio-img">
+                <img
+                  src="images/vazioPortifolio.svg"
+                  alt=""
+                  width="284"
+                  height="284"
+                  alt="Projeto disponível em breve"
+                />
+              </picture>
+              <div class="portifolio-card-titulo">
+                <span>Vazio</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="habilidades-bg" aria-labelledby="habilidade-titulo">
+        <div class="habilidade">
+          <h2 class="habilidade-titulo" id="habilidade-titulo">Habilidades</h2>
+          <ul class="habilidade-lista">
+            <li class="habilidade-item">
+              <picture>
+                <img
+                  class="habilidade-icon"
+                  src="icons/Icon-backend-yellow.svg"
+                  alt=""
+                  width="48"
+                  height="48"
+                  aria-hidden="true"
+                />
+              </picture>
+              <h3 class="habilidade-item-titulo">back-end</h3>
+              <p class="habilidade-item-texto">
+                Spring Boot, APIs REST e CRUD Criação da lógica da aplicação e
+                APIs para comunicação entre sistemas.
+              </p>
+            </li>
+            <li class="habilidade-item">
+              <picture>
+                <img
+                  class="habilidade-icon"
+                  src="icons/Icon-frontend-yellow.svg"
+                  alt=""
+                  width="48"
+                  height="48"
+                  aria-hidden="true"
+                />
+              </picture>
+              <h3 class="habilidade-item-titulo">Front-end</h3>
+              <p class="habilidade-item-texto">
+                Desenvolvimento de interfaces e layouts responsivos.
+              </p>
+            </li>
+            <li class="habilidade-item">
+              <picture>
+                <img
+                  class="habilidade-icon"
+                  src="icons/Icon-banco-yellow.svg"
+                  alt=""
+                  width="48"
+                  height="48"
+                  aria-hidden="true"
+                />
+              </picture>
+              <h3 class="habilidade-item-titulo">Banco de Dados</h3>
+              <p class="habilidade-item-texto">
+                SQL, MySQL e PostgreSQL Manipulação e organização de dados.
+              </p>
+            </li>
+            <li class="habilidade-item">
+              <picture>
+                <img
+                  class="habilidade-icon"
+                  src="icons/Icon-engenharia-yellow.svg"
+                  alt=""
+                  width="48"
+                  height="48"
+                  aria-hidden="true"
+                />
+              </picture>
+              <h3 class="habilidade-item-titulo">Engenharia</h3>
+              <p class="habilidade-item-texto">
+                Boas práticas e arquitetura Organização e estruturação do
+                código.
+              </p>
+            </li>
+            <li class="habilidade-item">
+              <picture>
+                <img
+                  class="habilidade-icon"
+                  src="icons/icon-git-yellow.svg"
+                  alt=""
+                  width="48"
+                  height="48"
+                  aria-hidden="true"
+                />
+              </picture>
+              <h3 class="habilidade-item-titulo">Versionamento</h3>
+              <p class="habilidade-item-texto">
+                Git e GitHub Controle de versões e organização do código.
+              </p>
+            </li>
+            <li class="habilidade-item">
+              <picture>
+                <img
+                  class="habilidade-icon"
+                  src="icons/Icon-performace-yellow.svg"
+                  alt=""
+                  width="48"
+                  height="48"
+                  aria-hidden="true"
+                />
+              </picture>
+              <h3 class="habilidade-item-titulo">Performance</h3>
+              <p class="habilidade-item-texto">
+                Melhoria de desempenho e eficiência da aplicação.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <footer class="footer-bg container">
+      <div class="footer">
+        <h2 class="footer-titulo">Thiago Lopes Machado</h2>
+        <span class="footer-span">Devloper Full Stack</span>
+        <div class="footer-redes">
+          <a
+            href="https://www.linkedin.com/in/thiago-lopes-machado-994b4a2b9/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn de Thiago Lopes Machado"
+          >
+            <img
+              src="icons/Linkedin-icon-white.svg"
+              alt=""
+              aria-hidden="true"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a
+            href="https://github.com/GitBrowserBit"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub de Thiago Lopes Machado"
+          >
+            <img
+              src="icons/Github-icon-white.svg"
+              alt=""
+              width="24"
+              height="24"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+        <a
+          class="footer-contato"
+          href="mailto:l6pes.dev@gmail.com"
+          aria-label="Enviar email para l6pes.dev@gmail.com"
+        >
+          <img src="icons/Mail-icon-white.svg" alt="" width="24" height="24" />
+          <span>l6pes.dev@gmail.com</span>
+        </a>
+      </div>
+    </footer>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

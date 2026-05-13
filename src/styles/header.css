@@ -37,9 +37,11 @@
     z-index: 99;
   }
   .header-bg[data-scroll="ativo"] {
+    background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
   }
+
   .header-bg[data-scroll="desativado"] {
     position: absolute;
   }
@@ -58,27 +60,5 @@
     display: flex;
     align-items: center;
     gap: 25px;
-  }
-
-  .header-nav li {
-    position: relative;
-  }
-  .header-nav li:hover,
-  .header-nav li:focus {
-    transform: scale(1.1);
-  }
-  .header-nav li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: var(--cor-primaria);
-    transition: width 0.3s ease;
-  }
-
-  .header-nav li:hover::after {
-    width: 100%;
   }
 }

@@ -1,9 +1,21 @@
-/** utilitarios */
 @import url("./styles/global.css");
+/** utilitarios */
 @import url("./styles/utils/cores.css");
 @import url("./styles/utils/tipografia.css");
+@import url("./styles/utils/botoes.css");
+@import url("./styles/utils/layout.css");
+
 /** Header */
 @import url("./styles/header.css");
 /*conteudo*/
 @import url("./styles/conteudo.css");
+/*tecnologias*/
 @import url("./styles/tecnologias.css");
+/*sobre mim*/
+@import url("./styles/sobre.css");
+/*portifolio*/
+@import url("./styles/portifolio.css");
+/*habilidade*/
+@import url("./styles/habilidade.css");
+/*footer*/
+@import url("./styles/footer.css");
